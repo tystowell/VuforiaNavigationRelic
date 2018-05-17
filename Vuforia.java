@@ -50,7 +50,6 @@ public class vuforia extends LinearOpMode {
       if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
         telemetry.addData("VuMark", "%s visible", vuMark);
         OpenGLMatrix pose = ((VuforiaTrackableDefaultListener)relicTemplate.getListener()).getPose();
-        telemetry.addData("Pose:", pose);
 
         if (pose != null) {
           VectorF position = pose.getTranslation();
