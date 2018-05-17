@@ -11,10 +11,6 @@ import org.firstinspires.ftc.robotcore.external.navigation.*;
 @Autonomous(name="Vuforia", group ="Autonomous")
 public class vuforia extends LinearOpMode {
 
-  //public static final String TAG = "Vuforia VuMark Sample";
-
-  OpenGLMatrix lastLocation = null;
-
   VuforiaLocalizer vuforia;
 
   @Override public void runOpMode() {
